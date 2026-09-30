@@ -1,0 +1,191 @@
+/*THIS IS MY CSS TEMPLATE */
+
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+/* Homer Simpson Resume Assignment */
+
+/*
+This CSS file has several design problems.
+
+Your job is to improve the page by fixing problems with:
+1. Contrast
+2. Proximity
+3. Hierarchy
+4. Repetition
+5. Alignment
+
+Do not change the HTML unless your instructor tells you to.
+*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+}
+
+/* Problem: The background color and text color are hard to read */
+body {
+    color: #555555;
+}
+
+/* Problem: The resume is not clearly aligned on the page */
+.resume {
+    width: 90%;
+    margin-left: 80px;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+/* Problem: Too many fonts are used */
+header {
+    font-family: Arial, sans-serif;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.profile {
+    font-family: Arial, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.experience {
+    font-family: arial, sans-serif;
+    margin-left: 20px;
+}
+
+.education {
+    font-family: arial, sans-serif;
+    margin-left: 20px;
+}
+
+.skills {
+    font-family: arial, sans-serif;
+    margin-left: 20px;
+}
+
+.hobbies {
+    font-family: arial, sans-serif;
+    margin-left: 20px;
+}
+
+/* Problem: Everything is the same size and weight */
+
+
+/* Problem: Every section heading has a different style */
+.profile h2 {
+    color: black;
+}
+
+.experience h2 {
+    color: black;
+}
+
+.education h2 {
+    color: black;
+}
+
+.skills h2 {
+    color: black;
+}
+
+.hobbies h2 {
+    color: black;
+}
+
+/* Problem: Some sections are too close together and others are too far apart */
+.profile {
+    margin-bottom: 5px;
+}
+
+.experience {
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+.education {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.skills {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.hobbies {
+    margin-top: 20px;
+}
+
+/* Problem: The image is too large and does not align well with the resume */
+figure {
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    margin-left: auto;
+}
+
+figcaption {
+    margin-top: 30px;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Problem: Lists and paragraphs have inconsistent spacing */
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ul {
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
